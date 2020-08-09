@@ -38,6 +38,7 @@ $tweaks = @(
 	"InstallFirefox",
 	"InstallVLC",
 	"InstallGit",
+	"InstallPowertoys",
 
 	### Windows Apps
 	"DebloatAll",
@@ -242,6 +243,11 @@ Function InstallFirefox {
 Function InstallGit {
 	Write-Output "Installing Git"
 	choco install git.install -y
+}
+
+Function InstallPowertoys {
+	Write-Output "Installing Powertoys"
+	choco install powertoys -y
 }
 
 ##########
