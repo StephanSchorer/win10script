@@ -12,7 +12,7 @@
 #
 #	Addition: One command to rule them all, One command to find it, and One command to Run it! 
 #
-#     > powershell -nop -c "iex(New-Object Net.WebClient).DownloadString('https://git.io/JJ8R4')"
+#     > powershell -nop -c "iex(New-Object Net.WebClient).DownloadString('https://git.io/JJdwW')"
 #
 #	Chris Titus Additions:
 #
@@ -39,6 +39,7 @@ $tweaks = @(
 	"InstallVLC",
 	"InstallGit",
 	"InstallPowertoys",
+	"InstallThunderbird",
 
 	### Windows Apps
 	"DebloatAll",
@@ -183,7 +184,7 @@ $tweaks = @(
 
 	### Unpinning ###
 	"UnpinStartMenuTiles",
-	#"UnpinTaskbarIcons",
+	"UnpinTaskbarIcons",
 
 	### Auxiliary Functions ###
 	"WaitForKey"
@@ -248,6 +249,11 @@ Function InstallGit {
 Function InstallPowertoys {
 	Write-Output "Installing Powertoys"
 	choco install powertoys -y
+}
+
+Function InstallThunderbird {
+	Write-Output "Installing Thunderbird"
+	choco install thunderbird -y
 }
 
 ##########
@@ -2589,7 +2595,7 @@ Function DebloatAll {
         #Optional: Typically not removed but you can if you need to for some reason
         #"*Microsoft.Advertising.Xaml_10.1712.5.0_x64__8wekyb3d8bbwe*"
         #"*Microsoft.Advertising.Xaml_10.1712.5.0_x86__8wekyb3d8bbwe*"
-        #"*Microsoft.BingWeather*"
+        "*Microsoft.BingWeather*"
         #"*Microsoft.MSPaint*"
         #"*Microsoft.MicrosoftStickyNotes*"
         #"*Microsoft.Windows.Photos*"

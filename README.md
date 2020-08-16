@@ -1,14 +1,29 @@
 # win10script
-This is the Ultimate Windows 10 Script from a creation from multiple debloat scripts and gists from github. I also added Chocolatey and other tools to the script that I install on every machine.
+This is a Script to setup Windows
+
+## Run
+Open the Powershell and run the following Command:
+```
+powershell -nop -c "iex(New-Object Net.WebClient).DownloadString('https://git.io/JJ8R4')"
+```
 
 ## My Additions
-
 - Dark Mode
 - One Command to launch and run
 - Chocolatey Install
 - O&O Shutup10 CFG and Run
 - Added Install Programs
 - Added Debloat Microsoft Store Apps
+
+## Added Software
+- 7zip
+- Adobe Acrobat Reader
+- Firefox
+- Git
+- Notepad++
+- Powertoys
+- Thunderbird
+- VLC
 
 ## Modifications
 I encourage people to fork this project and comment out things they don't like! Here is a list of normal things people change:
